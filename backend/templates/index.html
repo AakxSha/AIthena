@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>NeuroLearn</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>AIthena</h1>
+  
+  <div id="tabs">
+    <button>Upload</button>
+    <button>Quiz</button>
+    <button>Plan</button>
+  </div>
+
+  <form id="uploadForm">
+    <input type="file" name="notes" />
+    <button type="submit">Upload Notes</button>
+  </form>
+
+  <div id="questionsArea"></div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
